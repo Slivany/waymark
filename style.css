@@ -1,0 +1,48 @@
+:root{--paper:#FBFCFE;--grid:#E4ECF6;--ink:#1D2532;--muted:#56627A;--gold:#9C5F0C;--gold-ink:#FFFFFF;--wall:#4B2C12;--floor:#EFE4CB;--line:#D3DCE7;--card:#FFFFFF;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--paper:#0F1626;--grid:#18233A;--ink:#E8EDF5;--muted:#9AA6BC;--gold:#EDB850;--gold-ink:#1A1406;--wall:#EDB850;--floor:#C7D2E1;--line:#2A3855;--card:#162034;color-scheme:dark}}
+*{box-sizing:border-box}
+html{background:var(--paper);scroll-padding-top:16px}
+body{margin:0;color:var(--ink);font:18px/1.6 "Alegreya Sans","Segoe UI",Roboto,Arial,sans-serif;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:28px 28px;background-position:-1px -1px;background-color:var(--paper)}
+.wrap{max-width:46rem;margin:0 auto;padding:28px 22px 64px}
+.wide{max-width:68rem;margin:0 auto;padding:0 22px}
+nav.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:68rem;margin:0 auto;padding:22px 22px 0}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.mark svg{width:40px;height:40px;flex:none}
+.mark span{font-family:Cinzel,"Trajan Pro",Georgia,serif;font-weight:700;font-size:27px;letter-spacing:.04em;color:var(--gold)}
+nav.top .links{display:flex;gap:20px;font-size:17px}
+nav.top .links a{color:var(--ink);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav.top .links a[aria-current="page"],nav.top .links a:hover{border-bottom-color:var(--gold)}
+h1{font-family:Cinzel,"Trajan Pro",Georgia,serif;font-size:clamp(30px,5.4vw,46px);line-height:1.12;margin:40px 0 14px;max-width:22ch;text-wrap:balance}
+h2{font-size:24px;line-height:1.25;margin:44px 0 8px}
+h3{font-size:19px;margin:22px 0 4px}
+p,li{max-width:68ch}
+.lead{font-size:21px;color:var(--muted);margin:0 0 24px;max-width:56ch}
+a{color:var(--gold);text-underline-offset:3px}
+a:focus-visible,.dl:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+ul,ol{padding-left:24px} li{margin:5px 0}
+.dlrow{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:6px 0 10px}
+.dl{display:inline-flex;align-items:center;gap:12px;background:var(--gold);color:var(--gold-ink);text-decoration:none;font-weight:700;font-size:20px;padding:14px 24px 14px 20px;border-radius:12px;box-shadow:0 2px 0 var(--wall)}
+.dl:hover{filter:brightness(1.06)}
+.dl svg{width:24px;height:24px}
+.dlnote{color:var(--muted);font-size:16px;line-height:1.4}
+.shots{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:end;margin:40px auto 8px}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:6px solid #1C2537;box-shadow:0 18px 44px rgba(20,32,56,.28)}
+.shots .phone{width:200px;border-radius:26px;border-width:7px}
+.shots figcaption{grid-column:1 / -1;color:var(--muted);font-size:16px}
+@media (max-width:720px){.shots{grid-template-columns:1fr}.shots .phone{display:none}}
+.sheet{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 26px 24px;margin-top:26px}
+.sheet h2:first-child{margin-top:20px}
+.steps li{margin:8px 0}
+.small{font-size:16px;color:var(--muted)}
+kbd{font:700 14px/1 "Alegreya Sans",sans-serif;padding:3px 7px;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;background:var(--card)}
+.toc{columns:2 15rem;column-gap:28px;list-style:none;padding:0;margin:10px 0 0}
+.toc li{break-inside:avoid;margin:3px 0}
+.top-link{font-size:15px}
+table.keys{border-collapse:collapse;width:100%;font-size:17px}
+table.keys td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.keys td:first-child{white-space:nowrap;width:1%}
+.versions dt{font-weight:700;margin-top:14px}
+.versions dd{margin:2px 0 0;color:var(--ink)}
+footer{max-width:46rem;margin:0 auto;padding:18px 22px 40px;border-top:1px solid var(--line);font-size:16px;color:var(--muted);display:flex;gap:22px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.dl{transition:filter .15s}}

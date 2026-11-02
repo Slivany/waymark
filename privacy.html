@@ -8,43 +8,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@700&display=swap" rel="stylesheet">
-<style>
-:root{--paper:#FBFCFE;--grid:#E4ECF6;--ink:#1D2532;--muted:#56627A;--gold:#9C5F0C;--wall:#4B2C12;--floor:#EFE4CB;--line:#D3DCE7;color-scheme:light}
-@media (prefers-color-scheme:dark){:root{--paper:#0F1626;--grid:#18233A;--ink:#E8EDF5;--muted:#9AA6BC;--gold:#EDB850;--wall:#EDB850;--floor:#C7D2E1;--line:#2A3855;color-scheme:dark}}
-*{box-sizing:border-box}
-html{background:var(--paper)}
-body{margin:0;color:var(--ink);font:18px/1.6 "Alegreya Sans","Segoe UI",Roboto,Arial,sans-serif;background-color:var(--paper);
-background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:28px 28px;background-position:-1px -1px}
-main{max-width:44rem;margin:0 auto;padding:48px 22px 64px}
-.mark{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
-.mark svg{width:44px;height:44px;flex:none}
-.mark span{font-family:Cinzel,"Trajan Pro",Georgia,serif;font-weight:700;font-size:30px;letter-spacing:.04em;color:var(--gold)}
-h1{font-family:Cinzel,"Trajan Pro",Georgia,serif;font-size:clamp(28px,5vw,40px);line-height:1.15;margin:36px 0 12px}
-h2{font-size:22px;margin:36px 0 6px}
-p,li{max-width:68ch}
-.lead{font-size:21px;color:var(--muted);margin:0 0 8px}
-.sheet{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:4px 26px 22px;margin-top:28px}
-.map{display:block;width:100%;max-width:520px;height:auto;margin:22px 0 4px}
-a{color:var(--gold);text-underline-offset:3px}
-a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
-ul{padding-left:22px} li{margin:4px 0}
-footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:16px;color:var(--muted);display:flex;gap:22px;flex-wrap:wrap}
-.small{font-size:16px;color:var(--muted)}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-<a class="mark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="var(--gold)" stroke-width="4"/><circle cx="16" cy="16" r="12" fill="none" stroke="var(--paper)" stroke-width="1.2" stroke-dasharray="1.6 2.6"/></svg><span>Waymark</span></a>
+<nav class="top" aria-label="Site"><a class="mark" href="./"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="var(--gold)" stroke-width="4"/><circle cx="16" cy="16" r="12" fill="none" stroke="var(--paper)" stroke-width="1.2" stroke-dasharray="1.6 2.6"/></svg><span>Waymark</span></a><div class="links"><a href="./">Home</a><a href="guide.html">Guide</a></div></nav>
 
+<main class="wrap">
 <h1>Privacy policy</h1>
 <p class="small">Last updated 2 November 2026</p>
 <div class="sheet">
 <h2>The short version</h2>
 <p>Waymark keeps your maps, notes and documents on your device. If you connect Google Drive, it puts backup files in your own Drive and touches nothing else. Nobody else, including the person who made the app, receives your data.</p>
-
 <h2>What Waymark stores on your device</h2>
 <p>Your maps, journal entries, characters, creatures, encounter logs, settings and any PDFs you add are stored inside the app on your device. They stay there until you delete them or uninstall the app. If you choose a backup folder on your device, Waymark also writes dated backup files to that folder.</p>
-
 <h2>Google Drive</h2>
 <p>Connecting Google Drive is optional. If you connect it, Waymark asks Google for one permission: access to files that Waymark itself creates in your Drive (the <em>drive.file</em> permission). It can’t see, open or change any other file in your Drive.</p>
 <ul>
@@ -54,25 +30,22 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-si
 <li><strong>Who it’s shared with:</strong> no one. Waymark doesn’t send your Google data to the app’s maker or to anyone else, doesn’t use it for advertising, doesn’t sell it, and doesn’t use it to train AI models.</li>
 </ul>
 <p>Waymark’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-
 <h2>Other connections</h2>
 <ul>
 <li><strong>Pathbuilder 2e:</strong> when you import a character by its export number, Waymark sends that number to pathbuilder2e.com to download the character. Nothing else is sent.</li>
 <li><strong>Sending maps to friends:</strong> when you send maps, Waymark hands a file to the app you pick, such as a messaging app. It only happens when you choose to send something.</li>
 </ul>
 <p>Waymark has no analytics, crash reporting or advertising, and it doesn’t collect your name, email address or location.</p>
-
 <h2>Removing your data</h2>
 <ul>
 <li>Disconnect Google Drive in Waymark’s settings, or remove Waymark’s access from your Google Account at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
 <li>Delete the backup folder from your Google Drive whenever you like.</li>
 <li>Uninstalling the app deletes everything stored inside it on your device.</li>
 </ul>
-
 <h2>Changes and questions</h2>
 <p>If this policy changes, the date at the top changes too. For questions, use the support email address shown on Google’s sign-in screen when you connect Waymark.</p>
 </div>
-<footer><a href="index.html">Waymark</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></footer>
 </main>
+<footer><a href="./">Home</a><a href="guide.html">Guide</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></footer>
 </body>
 </html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waymark guide: how everything works</title>
+<meta name="description" content="How to use each part of Waymark: maps, exits, the journal, encounters, sharing and backups.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top" aria-label="Site"><a class="mark" href="./"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="var(--gold)" stroke-width="4"/><circle cx="16" cy="16" r="12" fill="none" stroke="var(--paper)" stroke-width="1.2" stroke-dasharray="1.6 2.6"/></svg><span>Waymark</span></a><div class="links"><a href="./">Home</a><a href="guide.html" aria-current="page">Guide</a></div></nav>
+
+<main class="wrap" id="top">
+<h1>How Waymark works</h1>
+<p class="lead">Short explanations of each part of the app. Jump to what you need.</p>
+<ul class="toc"><li><a href="#start">Getting started</a></li><li><a href="#drawing">Drawing a map</a></li><li><a href="#squares">Looking at a square</a></li><li><a href="#exits">Floors and exits between maps</a></li><li><a href="#travel">Travel routes</a></li><li><a href="#journal">Journal and quick notes</a></li><li><a href="#town">Your town’s supplies</a></li><li><a href="#characters">Characters from Pathbuilder</a></li><li><a href="#encounters">Encounters</a></li><li><a href="#documents">PDFs</a></li><li><a href="#sharing">Sharing maps with friends</a></li><li><a href="#backups">Backups</a></li><li><a href="#settings">Settings</a></li><li><a href="#keys">Keyboard shortcuts</a></li><li><a href="#versions">Every version</a></li></ul>
+<div class="sheet"><section id="start"><h2>Getting started</h2>
+<p>Waymark has three places, in the bar at the top: <strong>Maps</strong> (all your maps), the <strong>map</strong> you have open, and the <strong>Journal</strong>.</p>
+<ol class="steps">
+<li>On the Maps screen, tap <strong>+ New map</strong>. Give it a name, pick <strong>Dungeon</strong> for anything with rooms or <strong>Region</strong> for overland travel, and type a grid size like 20x20.</li>
+<li>Pick a tool from the tool bar and draw with one finger. Use two fingers to move around and zoom.</li>
+<li>Made a mistake? Tap undo at the top, or press <kbd>Ctrl</kbd> <kbd>Z</kbd> on a keyboard.</li>
+</ol>
+<p>On a phone, the most used tools sit in the bottom bar and the rest are under <strong>More</strong>. On a tablet you can move the tools to the left or right side in Settings.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="drawing"><h2>Drawing a map</h2>
+<h3>Rooms</h3>
+<p>Pick <strong>Room</strong> and drag a rectangle. Or type the size the GM gives you, like <em>6x4</em> or <em>30x20ft</em>, and tap where it goes. Walls appear around it by themselves.</p>
+<h3>Paint</h3>
+<p>Paint floor squares freehand, which is handy for corridors. The tabs switch between indoor ground (stone, wood, water, ice, pits), outdoor terrain, and plain colours for marking areas. Start on a square that already has that ground to erase instead.</p>
+<h3>Walls and doors</h3>
+<p><strong>Wall</strong> draws along grid lines; start on an existing wall to remove walls. <strong>Door</strong> places a door, locked door, secret door, bars, a low wall or ledge, or an opening. Tap the same door again to remove it.</p>
+<h3>Markers</h3>
+<p>Pick <strong>Marker</strong> and choose from four tabs: Basic shapes, Places (stairs, wells, graves, ruins), Finds (treasure, fuel, food, medicine) and Danger. Basic markers come in eight colours. Numbers and letters count up by themselves, arrows turn when you tap them again, and “your own symbol” can be any letter or emoji. Tap a marker again to mark it done (looted, disarmed, dealt with); a third tap removes it.</p>
+<h3>Pen, labels and notes</h3>
+<p><strong>Pen</strong> draws freely, for caves, rivers and cliffs. <strong>Label</strong> puts a name on the map, such as “Crypt”. <strong>Note</strong> pins a numbered note to a square. <strong>Measure</strong> shows distances using Pathfinder’s rule for diagonals. <strong>Erase</strong> clears squares.</p>
+<h3>Random layouts</h3>
+<p>For practice fights or quick dungeons, open the <strong>⋯</strong> menu on the floor list and choose <strong>Random layout</strong>: rooms and corridors, caves, or a single room of the size you type, with doors, stairs, treasure, hazards and creatures if you want them.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="squares"><h2>Looking at a square</h2>
+<p>Pick <strong>Look</strong> and tap any square. A panel opens where you can write a note, add a label, change the marker or ground, and see where the square leads. The orange ring is the party: tap <strong>Move the party here</strong> to keep track of where you are.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="exits"><h2>Floors and exits between maps</h2>
+<p>The floor list sits in the corner of the map. Use <strong>+ above</strong> and <strong>+ below</strong> to add floors. Tap stairs with the Look tool and choose <strong>Add floor below</strong> to make the next floor with matching stairs.</p>
+<ol class="steps">
+<li>Pick <strong>Exit</strong> and tap the square that leads somewhere: cellar steps, a cave mouth, a road out of town.</li>
+<li>Choose where it goes: a new map, a map you already have, or another floor.</li>
+<li>Waymark opens that place. Tap the square where you arrive, and both ends are linked.</li>
+</ol>
+<p>Each end gets a small tag such as “→ Cellar”. Tap <strong>Go there</strong> on a linked square, and use <strong>← Back</strong> (or Android’s back button) to retrace your steps. The Maps screen shows how all your maps connect.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="travel"><h2>Travel routes</h2>
+<p>On a Region map, pick <strong>Route</strong> and tap squares in the order you travelled. Tap a stop again to mark a night’s camp. Set how many miles one square is and how far you travel in a day, and Waymark shows the distance and roughly how many days it took.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="journal"><h2>Journal and quick notes</h2>
+<p>The journal has sections for sessions, people, places, clues and rumours, open questions, goals and quests, expeditions, and lore. New notes start with a few useful prompts.</p>
+<ul>
+<li>Press <kbd>Q</kbd> or tap <strong>Quick note</strong> to jot something down mid-game. It lands in the current session’s log with the time.</li>
+<li>Link notes and maps by typing <em>[[</em> and a name. Waymark suggests matches; press <kbd>Tab</kbd> to pick one.</li>
+<li>Start a line with <em>- [ ]</em> for a checklist.</li>
+<li><strong>Notes on maps</strong> collects every note pinned to a square, so you can find them again.</li>
+<li>Search everything with <kbd>Ctrl</kbd> <kbd>K</kbd> or the magnifying glass.</li>
+</ul><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="town"><h2>Your town’s supplies</h2>
+<p>The first journal section keeps a ledger of fuel, food, medicine, tools and materials. Tap <strong>+ Brought home</strong> after an expedition, or <strong>− The town used</strong> when supplies run down. On a map, tap a supply marker with the Look tool and choose <strong>Log in the town ledger</strong> to record where it came from. You can rename the section to your own home base.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="characters"><h2>Characters from Pathbuilder</h2>
+<ol class="steps">
+<li>In Pathbuilder 2e, open the menu and choose <strong>Export JSON</strong>. It shows a number.</li>
+<li>In Waymark, go to Journal, <strong>Characters</strong>, type the number and tap <strong>Import</strong>.</li>
+</ol>
+<p>Waymark works out hit points, AC, saves, skills, Strikes and spells. After levelling up in Pathbuilder, export again and tap <strong>Update from Pathbuilder</strong>. Without internet, paste the exported text or pick the file instead.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="encounters"><h2>Encounters</h2>
+<h3>Setting up</h3>
+<p>Pick <strong>Tokens</strong> and tap a square to add one of your characters, a creature from your library, or a new creature with its HP, AC, saves and attacks. You can add several at once, like three wolves.</p>
+<h3>Running the fight</h3>
+<p>Tap the crossed swords to open the encounter. <strong>Start encounter</strong> rolls initiative and orders everyone; <strong>Next turn</strong> moves on and tracks rounds. Frightened goes down by itself at the end of a turn.</p>
+<h3>Moving</h3>
+<p>Drag a token. Waymark shades how far it can go with one, two or three Strides, going around walls, difficult ground and enemies, and counts the actions used.</p>
+<h3>Attacks and actions</h3>
+<p>Tap a token to see its card. Choose a target, then tap a Strike: Waymark rolls against the target’s AC with the multiple attack penalty, off-guard, flanking and frightened, rolls the damage and offers to apply it. The other actions, such as Trip, Grapple, Demoralize and Feint, roll the right skill against the right DC and add conditions like prone or frightened when they succeed.</p>
+<h3>Spells and areas</h3>
+<p>Spells come from the character’s list. Cast with one to three actions, roll a spell attack, have the target roll a save against your DC, or place the spell’s area. The <strong>Area</strong> tool draws bursts, emanations, cones and lines and lists who is inside. Waymark only knows spell names, so check each spell’s own rules.</p>
+<h3>Conditions and the creature library</h3>
+<p>Toggle conditions on the token card. Persistent damage is rolled at the end of each turn with the flat check to end it. Creatures you add are saved under Journal, <strong>Creatures</strong>, with space for what Recall Knowledge told you.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="documents"><h2>PDFs</h2>
+<p>Add character sheets and handouts under Journal, <strong>Documents</strong>, or share a PDF to Waymark from another app. They open in a built-in reader that works offline. PDFs aren’t part of backups, so keep the originals too.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="sharing"><h2>Sharing maps with friends</h2>
+<ol class="steps">
+<li>On the Maps screen, tap <strong>Send maps</strong>, or choose <strong>Send to the party</strong> from a map’s ⋯ menu.</li>
+<li>Choose one map, a map and everything it connects to, or all maps, then pick an app such as WhatsApp or Discord.</li>
+<li>Your friend opens the file with Waymark, or uses <strong>Receive maps</strong>.</li>
+</ol>
+<p>Maps they already have are merged: their drawings stay, yours are added, and where you both wrote a note on the same square, both notes are kept. Tokens and encounters aren’t sent.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="backups"><h2>Backups</h2>
+<ol class="steps">
+<li>Open Settings (☰) and tap <strong>Connect Google Drive</strong>.</li>
+<li>Tap <strong>Open google.com/device</strong>, sign in and type the code Waymark shows. If Google says it hasn’t verified the app, tap Advanced, then Go to Waymark.</li>
+<li>Come back to Waymark. It connects by itself and makes the first backup.</li>
+</ol>
+<p>From then on, Waymark saves a dated backup to a “Waymark backups” folder in your Drive whenever you leave the app after changes, and keeps the newest 14 days. Without internet, it catches up next time. To get something back, use <strong>Restore</strong> in Settings: you see what’s in a backup first, and it’s merged with what you have.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="settings"><h2>Settings</h2>
+<p>Choose a dark or light look, put the tools on the left or right, show grid letters and numbers, show the floor below faintly, and turn on stylus mode, where the pen draws and fingers only move the map. Stylus mode switches on by itself the first time Waymark sees a stylus.</p><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="keys"><h2>Keyboard shortcuts</h2>
+<p>With a keyboard attached, most things have a key. Press <kbd>?</kbd> in the app to see the full list.</p>
+<table class="keys">
+<tr><td><kbd>Q</kbd></td><td>Quick note</td></tr>
+<tr><td><kbd>J</kbd></td><td>Switch between the map and the journal</td></tr>
+<tr><td><kbd>Ctrl</kbd> <kbd>K</kbd></td><td>Search</td></tr>
+<tr><td><kbd>R</kbd>, then a size</td><td>Room tool; type 6x4 or 30x20ft and press Enter</td></tr>
+<tr><td>Arrows</td><td>Move the party ring</td></tr>
+<tr><td><kbd>Shift</kbd> + arrows</td><td>Walk and paint a corridor as you go</td></tr>
+<tr><td><kbd>Alt</kbd> + arrows</td><td>Put a wall or door on that side</td></tr>
+<tr><td><kbd>G</kbd></td><td>Go through the stairs or exit under the party</td></tr>
+<tr><td><kbd>[</kbd> <kbd>]</kbd></td><td>Floor up or down</td></tr>
+<tr><td><kbd>V</kbd> <kbd>F</kbd> <kbd>R</kbd> <kbd>W</kbd> <kbd>D</kbd> <kbd>L</kbd> <kbd>I</kbd> <kbd>B</kbd> <kbd>K</kbd> <kbd>A</kbd> <kbd>P</kbd> <kbd>N</kbd> <kbd>T</kbd> <kbd>M</kbd> <kbd>E</kbd></td><td>Look, Paint, Room, Wall, Door, Exit, Marker, Pen, Tokens, Area, Route, Note, Label, Measure, Erase</td></tr>
+<tr><td><kbd>1</kbd> to <kbd>9</kbd></td><td>Pick from the tool’s palette</td></tr>
+</table><p class="top-link"><a href="#top">Back to the top</a></p></section><section id="versions"><h2>Every version</h2>
+<dl class="versions">
+<dt>1.4, 2 November 2026</dt><dd>Automatic backups to Google Drive. Renamed to Waymark.</dd>
+<dt>1.3</dt><dd>Sending and merging maps, the town ledger, travel routes, the pen, the creature library, PDFs, random layouts, flanking, persistent damage and stylus mode.</dd>
+<dt>1.2</dt><dd>Encounters with tokens, initiative, actions and spells; Pathbuilder import; a layout made for phones.</dd>
+<dt>1.1</dt><dd>Exits that link maps together, many more markers and colours, and more room to write when the on-screen keyboard is open.</dd>
+<dt>1.0</dt><dd>The first version: grid maps with floors, the journal and quick notes.</dd>
+</dl><p class="top-link"><a href="#top">Back to the top</a></p></section></div>
+</main>
+<footer><a href="./">Home</a><a href="guide.html">Guide</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></footer>
+</body>
+</html>
